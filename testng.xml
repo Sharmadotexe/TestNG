@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MySuite">
+    <test name="MyTests1">
+        <classes>
+            <class name="JavaPkg.TestClass"/>
+            <class name="JavaPkg.TestClass2">
+            <methods>
+                <exclude name="func4"/>
+            </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="MyTests2">
+        <classes>
+
+            <class name="JavaPkg.TestClass3"/>
+        </classes>
+    </test>
+</suite>
